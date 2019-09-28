@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <title>WebRTC</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css" type="text/css" media="all">
+  <script src="main.js"></script>
+</head>
+<body>
+  <h1>WebRTC</h1>
+  
+  <div class="controlbox">
+    <button id="connectButton" name="connectButton" class="buttonleft">
+      Connect
+    </button>
+    <button id="disconnectButton" name="disconnectButton" class="buttonright" disabled>
+      Disconnect
+    </button>
+  </div>
+  
+  <div class="messagebox">
+    <label for="message">Enter a message:
+      <input type="text" name="message" id="message" placeholder="Message text" 
+              inputmode="latin" size=60 maxlength=120 disabled>
+    </label>
+    <button id="sendButton" name="sendButton" class="buttonright" disabled>
+      Send
+    </button>
+  </div>
+  <div class="messagebox" id="receivebox">
+    <p>Messages received:</p>
+  </div>
+</body>
+</html>
